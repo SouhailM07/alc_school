@@ -1,0 +1,142 @@
+# ============================================================
+# Dependencies
+# ============================================================
+node_modules/
+.pnpm-store/
+.npm/
+.yarn/
+.bun/
+
+# ============================================================
+# Next.js
+# ============================================================
+.next/
+out/
+.vercel/
+
+# ============================================================
+# Build output
+# ============================================================
+dist/
+build/
+coverage/
+.turbo/
+
+# ============================================================
+# Cache
+# ============================================================
+.cache/
+.parcel-cache/
+.eslintcache/
+.stylelintcache/
+*.tsbuildinfo
+
+# ============================================================
+# Logs
+# ============================================================
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ============================================================
+# Environment / secrets
+# ============================================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Keep example environment files visible
+!.env.example
+!.env.template
+
+# ============================================================
+# IDE / Editors
+# ============================================================
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+
+.idea/
+*.iml
+
+# ============================================================
+# OS files
+# ============================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ============================================================
+# Git
+# ============================================================
+.git/
+.gitattributes
+
+# ============================================================
+# Temporary files
+# ============================================================
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+# ============================================================
+# Testing
+# ============================================================
+playwright-report/
+test-results/
+blob-report/
+.nyc_output/
+
+# ============================================================
+# Generated files
+# ============================================================
+*.generated.*
+generated/
+__generated__/
+
+# ============================================================
+# Large media / raw assets
+# ============================================================
+# Keep source assets if they are intentionally part of the project.
+# Ignore only raw/temporary media dumps.
+
+media/raw/
+assets/raw/
+public/raw/
+*.mov
+*.avi
+*.mkv
+
+# ============================================================
+# 3D / rendering caches
+# ============================================================
+.blender/
+renders/
+render/
+3d-cache/
+texture-cache/
+
+# Keep actual project assets:
+!public/
+!public/images/
+!public/models/
+!public/textures/
+
+# ============================================================
+# AI / generated temporary assets
+# ============================================================
+ai-output/
+ai-generated/
+higgsfield-output/
+generated-assets/

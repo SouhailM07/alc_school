@@ -1,26 +1,76 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  
+  /* Fonts */
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-instrument-sans);
+  --font-serif: var(--font-instrument-serif);
+  --font-arabic: var(--font-ibm-plex-arabic);
+
+  /* Brand Colors */
+  --color-brand-navy: #0A2545;
+  --color-brand-navy-light: #16365D;
+  --color-brand-gold: #F4B942;
+  --color-brand-gold-hover: #E3A62F;
+  --color-brand-slate: #64748B;
+  --color-brand-slate-light: #F8FAFC;
+
+  /* Shadcn Semantic Mapping */
+  --color-primary: var(--color-brand-gold);
+  --color-primary-foreground: var(--color-brand-navy);
+  --color-secondary: var(--color-brand-navy-light);
+  --color-secondary-foreground: #FFFFFF;
+  --color-muted: var(--color-brand-slate-light);
+  --color-muted-foreground: var(--color-brand-slate);
+  --color-accent: var(--color-brand-slate-light);
+  --color-accent-foreground: var(--color-brand-navy);
+  
+  --color-border: #E2E8F0;
+  --color-input: #E2E8F0;
+  --color-ring: var(--color-brand-gold);
+  
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+  --radius-xl: 16px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+:root {
+  --background: #FFFFFF;
+  --foreground: var(--color-brand-navy);
+  --radius: 6px;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  
+  /* Scroll margin for anchors */
+  html {
+    scroll-padding-top: 5rem;
+    scroll-behavior: smooth;
+  }
+
+  button:not(:disabled), [role="button"]:not(:disabled) {
+    cursor: pointer;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Reduced motion global override */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
