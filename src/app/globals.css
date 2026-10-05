@@ -60,6 +60,21 @@
     scroll-behavior: smooth;
   }
 
+  section[id] {
+    scroll-margin-top: 4.5rem;
+  }
+
+  :focus-visible {
+    outline: 2px solid #F4B942;
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  ::selection {
+    background: #F4B942;
+    color: #0A2545;
+  }
+
   button:not(:disabled), [role="button"]:not(:disabled) {
     cursor: pointer;
   }
