@@ -2,6 +2,10 @@ import type { Metadata, Viewport } from "next";
 import { IBM_Plex_Sans_Arabic, Instrument_Sans, Instrument_Serif, Inter } from "next/font/google";
 import "./globals.css";
 import { seo, siteUrl } from "@/content/site";
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
+
 
 const instrumentSans = Instrument_Sans({
   variable: "--font-instrument-sans",
@@ -61,6 +65,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           Aller au contenu
         </a>
         {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
