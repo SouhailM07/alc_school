@@ -9,7 +9,7 @@ export const inquirySchema = z.object({
     .trim()
     .min(1, "Indiquez votre numéro de téléphone.")
     .refine((v) => algerianPhoneRegex.test(v.replace(/[\s.-]/g, "")), {
-      message: "Numéro algérien invalide (ex. 0550 59 02 88 ou +213…).",
+      message: "Numéro algérien invalide (ex. 0779 32 71 27 ou +213…).",
     }),
   course: z.string().min(1, "Choisissez une formation."),
   message: z.string().trim().max(1000, "Message trop long (1000 caractères max).").optional(),

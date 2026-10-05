@@ -27,7 +27,7 @@ export default function OgImage() {
           Apprenez l&apos;anglais avec confiance.
         </div>
         <div style={{ fontSize: 30, color: "#CBD5E1", marginTop: 20 }}>
-          ALC — Algerian Learning Centers · Bir Mourad Raïs
+          ALC — Advanced Learning Centre · Chéraga
         </div>
       </div>
     ),

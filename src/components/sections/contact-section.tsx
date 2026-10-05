@@ -16,10 +16,10 @@ export function ContactSection() {
           description={contactSection.text}
         />
         <div className="mt-10 grid gap-6 lg:grid-cols-[1.2fr_1fr]">
-          <Reveal>
+          <Reveal className="h-full">
             <ContactForm />
           </Reveal>
-          <Reveal delay={0.1}>
+          <Reveal delay={0.1} className="h-full">
             <LocationCard />
           </Reveal>
         </div>

@@ -14,14 +14,14 @@ export function KidsTeens() {
           <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
             {kidsSection.features.map((f, i) => (
               <Reveal key={f} delay={i * 0.06}>
-                <li className="flex items-center gap-2 rounded-lg border border-border bg-white px-4 py-3 text-sm font-medium text-brand-navy">
-                  <FaCheck aria-hidden className="shrink-0" style={{ color: "#B07C1A" }} /> {f}
+                <li className="flex items-center gap-2 rounded-lg border border-border bg-white px-4 py-3 text-sm font-medium text-brand-dark">
+                  <FaCheck aria-hidden className="shrink-0" style={{ color: "#2E8540" }} /> {f}
                 </li>
               </Reveal>
             ))}
           </ul>
           <Reveal delay={0.2}>
-            <Link href="#contact" className="mt-6 inline-flex h-12 items-center rounded-lg bg-brand-gold px-6 font-bold text-brand-navy hover:bg-brand-gold-hover">
+            <Link href="#contact" className="mt-6 inline-flex h-12 items-center rounded-lg bg-brand-medium px-6 font-bold text-white hover:bg-brand-dark">
               Inscrire mon enfant
             </Link>
           </Reveal>

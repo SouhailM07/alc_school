@@ -23,7 +23,7 @@ function JsonLd() {
       {
         "@type": "EducationalOrganization",
         "@id": `${siteUrl}/#org`,
-        name: "ALC — Algerian Learning Centers",
+        name: "ALC — Advanced Learning Centre",
         description: seo.description,
         url: siteUrl,
         foundingDate: "1995",
@@ -38,7 +38,7 @@ function JsonLd() {
       },
       {
         "@type": "LocalBusiness",
-        name: "ALC — Algerian Learning Centers",
+        name: "ALC — Advanced Learning Centre",
         telephone: contact.phoneMobile,
         email: contact.email,
         address: {

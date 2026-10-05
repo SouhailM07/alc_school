@@ -7,7 +7,7 @@ import { SectionHeading } from "./section-heading";
 
 export function Entreprises() {
   return (
-    <section id="entreprises" className="scroll-mt-20 bg-brand-navy">
+    <section id="entreprises" className="scroll-mt-20 bg-brand-dark">
       <div className="mx-auto grid max-w-6xl items-center gap-10 px-4 py-24 sm:px-6 lg:grid-cols-2 lg:py-36">
         <div>
           <SectionHeading dark eyebrow={corporate.eyebrow} titleA={corporate.titleA} emphasized={corporate.emphasized} titleB={corporate.titleB} description={corporate.description} />
@@ -16,7 +16,7 @@ export function Entreprises() {
               <Reveal key={f.title} delay={i * 0.07}>
                 <div className="rounded-[10px] border border-white/15 bg-white/5 p-5">
                   <p className="flex items-center gap-2 font-heading text-base font-bold text-white">
-                    <FaCheck aria-hidden className="text-brand-gold" /> {f.title}
+                    <FaCheck aria-hidden className="text-brand-green" /> {f.title}
                   </p>
                   <p className="mt-2 text-sm leading-6 text-slate-300">{f.text}</p>
                 </div>
@@ -24,7 +24,7 @@ export function Entreprises() {
             ))}
           </div>
           <Reveal delay={0.2}>
-            <Link href={corporate.cta.href} className="mt-8 inline-flex h-12 items-center rounded-lg bg-brand-gold px-6 font-bold text-brand-navy transition hover:bg-brand-gold-hover">
+            <Link href={corporate.cta.href} className="mt-8 inline-flex h-12 items-center rounded-lg bg-brand-medium px-6 font-bold text-white transition hover:bg-brand-dark">
               {corporate.cta.label}
             </Link>
           </Reveal>

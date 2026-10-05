@@ -20,11 +20,11 @@ export function SectionHeading({
   return (
     <Reveal>
       <div className="max-w-2xl">
-        <p className="flex items-center gap-2 text-xs font-bold tracking-widest uppercase" style={{ color: dark ? "#F4B942" : "#B07C1A" }}>
-          <span aria-hidden className="inline-block h-px w-6 bg-brand-gold" />
+        <p className="flex items-center gap-2 text-xs font-bold tracking-widest text-brand-green uppercase">
+          <span aria-hidden className="inline-block h-px w-6 bg-brand-green" />
           {eyebrow}
         </p>
-        <h2 id={id} className={`mt-3 font-heading text-3xl font-bold tracking-tight text-balance sm:text-4xl ${dark ? "text-white" : "text-brand-navy"}`}>
+        <h2 id={id} className={`mt-3 font-heading text-3xl font-bold tracking-tight text-balance sm:text-4xl ${dark ? "text-white" : "text-brand-dark"}`}>
           {titleA} {emphasized && <em className="font-serif font-normal italic">{emphasized}</em>} {titleB}
         </h2>
         {description && <p className={`mt-4 text-base leading-7 ${dark ? "text-slate-300" : "text-slate-600"}`}>{description}</p>}

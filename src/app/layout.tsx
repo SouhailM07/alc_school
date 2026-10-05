@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "fr_DZ",
     url: "/",
-    siteName: "ALC — Algerian Learning Centers",
+    siteName: "ALC — Advanced Learning Centre",
     title: seo.title,
     description: seo.description,
   },
@@ -53,10 +53,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       lang="fr"
       className={`${instrumentSans.variable} ${instrumentSerif.variable} ${inter.variable} ${plexArabic.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-white font-sans text-brand-navy">
+      <body className="flex min-h-full flex-col bg-white font-sans text-brand-text">
         <a
           href="#contenu"
-          className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:rounded-md focus:bg-brand-gold focus:px-4 focus:py-2 focus:font-bold focus:text-brand-navy"
+          className="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-50 focus:rounded-md focus:bg-brand-medium focus:px-4 focus:py-2 focus:font-bold focus:text-white"
         >
           Aller au contenu
         </a>

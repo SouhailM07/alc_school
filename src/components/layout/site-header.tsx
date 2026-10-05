@@ -55,7 +55,7 @@ export function SiteHeader() {
               aria-current={active === l.href ? "true" : undefined}
               className={cn(
                 "rounded-md px-3 py-2 text-sm font-medium transition-colors",
-                active === l.href ? "text-brand-navy underline decoration-brand-gold decoration-2 underline-offset-8" : "text-slate-600 hover:text-brand-navy"
+                active === l.href ? "text-brand-dark underline decoration-brand-green decoration-2 underline-offset-8" : "text-slate-600 hover:text-brand-dark"
               )}
             >
               {l.label}
@@ -65,7 +65,7 @@ export function SiteHeader() {
         <div className="flex items-center gap-2">
           <Link
             href="#contact"
-            className="hidden h-9 items-center rounded-lg bg-brand-gold px-4 text-sm font-bold text-brand-navy transition hover:bg-brand-gold-hover sm:inline-flex"
+            className="hidden h-9 items-center rounded-lg bg-brand-medium px-4 text-sm font-bold text-white transition hover:bg-brand-dark sm:inline-flex"
           >
             S&apos;inscrire
           </Link>
@@ -87,7 +87,7 @@ export function SiteHeader() {
                     key={l.href}
                     href={l.href}
                     onClick={() => setOpen(false)}
-                    className="rounded-md px-3 py-3 text-base font-medium text-brand-navy hover:bg-slate-50"
+                    className="rounded-md px-3 py-3 text-base font-medium text-brand-dark hover:bg-slate-50"
                   >
                     {l.label}
                   </Link>
@@ -95,7 +95,7 @@ export function SiteHeader() {
                 <Link
                   href="#contact"
                   onClick={() => setOpen(false)}
-                  className="mt-3 inline-flex h-11 items-center justify-center rounded-lg bg-brand-gold px-5 font-bold text-brand-navy hover:bg-brand-gold-hover"
+                  className="mt-3 inline-flex h-11 items-center justify-center rounded-lg bg-brand-medium px-5 font-bold text-white hover:bg-brand-dark"
                 >
                   S&apos;inscrire
                 </Link>

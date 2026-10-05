@@ -15,10 +15,10 @@ export function Gallery() {
           titleB="des progrès visibles."
           description="Un aperçu de nos salles et de nos séances. Images d'illustration."
         />
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-10 grid grid-flow-dense gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {gallery.map((g, i) => (
-            <Reveal key={g.src} delay={(i % 4) * 0.06} className={cn(g.wide && "sm:col-span-2 lg:col-span-2")}>
-              <figure className="group overflow-hidden rounded-[10px] border border-border">
+            <Reveal key={g.src} delay={(i % 4) * 0.06} className={cn("h-full", g.wide && "sm:col-span-2 lg:col-span-2")}>
+              <figure className="group flex h-64 sm:h-72 lg:h-80 w-full overflow-hidden rounded-[10px] border border-border">
                 <Image
                   src={g.src}
                   alt={g.alt}
@@ -26,7 +26,7 @@ export function Gallery() {
                   height={g.wide ? 896 : 1200}
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   loading="lazy"
-                  className="aspect-[4/3] w-full object-cover transition duration-500 group-hover:scale-[1.03]"
+                  className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]"
                 />
               </figure>
             </Reveal>

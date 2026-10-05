@@ -3,14 +3,14 @@ export const siteUrl =
   "https://www.alc-dz.net";
 
 export const contact = {
-  phoneMobile: "0550 59 02 88",
-  phoneMobileHref: "tel:+213550590288",
-  whatsappHref: "https://wa.me/213550590288",
+  phoneMobile: "0779 32 71 27",
+  phoneMobileHref: "tel:+213779327127",
+  whatsappHref: "https://wa.me/213779327127",
   phoneLandline: "023 48 08 10",
   phoneLandlineHref: "tel:+21323480810",
   email: "contact@alc-dz.net",
-  address: "Rue des Frères Bouadou, Bir Mourad Raïs, Alger",
-  mapsQuery: "ALC Algerian Learning Centers Bir Mourad Raïs Alger",
+  address: "602, Chéraga 16016",
+  mapsQuery: "ALC SCHOOL Cheraga",
   foundingYear: 1995,
 } as const;
 
@@ -35,7 +35,7 @@ export const hero = {
   emphasized: "avec confiance,",
   titleB: "parlez au monde.",
   description:
-    "ALC — Algerian Learning Centers vous accompagne de vos premiers mots jusqu'aux certifications internationales, avec des formateurs expérimentés et des groupes à taille humaine.",
+    "ALC — Advanced Learning Centre vous accompagne de vos premiers mots jusqu'aux certifications internationales, avec des formateurs expérimentés et des groupes à taille humaine.",
   primaryCta: { label: "S'inscrire", href: "#contact" },
   secondaryCta: { label: "Découvrir nos formations", href: "#formations" },
   trust: [
@@ -207,7 +207,7 @@ export const benefits = [
   { title: "Parlez dès la première semaine", text: "50 % du temps de cours consacré à l'oral : dialogues, débats et mises en situation réelles." },
   { title: "Des groupes qui vous font parler", text: "Des classes limitées pour que chaque élève prenne la parole à chaque séance." },
   { title: "Un niveau mesuré et certifié", text: "Tests d'entrée et de sortie alignés CECR, plus une préparation intensive aux examens officiels." },
-  { title: "Au cœur d'Alger", text: "Un centre accessible à Bir Mourad Raïs, avec des horaires du matin au soir et le week-end." },
+  { title: "Au cœur d'Alger", text: "Un centre accessible à Chéraga, avec des horaires du matin au soir et le week-end." },
 ] as const;
 
 export const showPlaceholderTestimonials = false;
@@ -224,7 +224,7 @@ export const finalCta = {
   titleB: "avec assurance ?",
   text: "Laissez-nous vos coordonnées : nous vous rappelons sous 24 h pour un test de niveau gratuit et un plan de formation.",
   primary: { label: "Demander un rappel gratuit", href: "#contact" },
-  secondary: { label: "Appeler le 0550 59 02 88", href: "tel:+213550590288" },
+  secondary: { label: "Appeler le 0779 32 71 27", href: "tel:+213779327127" },
 } as const;
 
 export const contactSection = {
@@ -238,7 +238,7 @@ export const contactSection = {
 } as const;
 
 export const footer = {
-  tagline: "Algerian Learning Centers — l'anglais avec confiance, depuis 1995.",
+  tagline: "Advanced Learning Centre — l'anglais avec confiance, depuis 1995.",
   columns: [
     { title: "Formations", links: [{ label: "Anglais général", href: "#formations" }, { label: "Kids & Teens", href: "#jeunes" }, { label: "Examens", href: "#examens" }, { label: "Entreprises", href: "#entreprises" }] },
     { title: "L'école", links: [{ label: "Pourquoi ALC", href: "#pourquoi" }, { label: "Galerie", href: "#galerie" }, { label: "Avis", href: "#avis" }, { label: "Contact", href: "#contact" }] },
@@ -246,8 +246,8 @@ export const footer = {
 } as const;
 
 export const seo = {
-  title: "ALC — Algerian Learning Centers | Cours d'anglais à Alger depuis 1995",
+  title: "ALC — Advanced Learning Centre | Cours d'anglais à Alger depuis 1995",
   description:
-    "ALC à Bir Mourad Raïs, Alger : cours d'anglais adultes, enfants & ados, préparation TOEIC, TOEFL, IELTS, TFI et formation entreprises. Test de niveau gratuit.",
-  keywords: ["cours anglais Alger", "école anglais Alger", "ALC Alger", "TOEIC Alger", "TOEFL Alger", "IELTS Alger", "anglais enfants Alger", "formation entreprise anglais Alger", "Bir Mourad Raïs"],
+    "ALC à Chéraga, Alger : cours d'anglais adultes, enfants & ados, préparation TOEIC, TOEFL, IELTS, TFI et formation entreprises. Test de niveau gratuit.",
+  keywords: ["cours anglais Alger", "école anglais Alger", "ALC Alger", "TOEIC Alger", "TOEFL Alger", "IELTS Alger", "anglais enfants Alger", "formation entreprise anglais Alger", "Chéraga"],
 } as const;

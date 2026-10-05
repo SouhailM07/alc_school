@@ -1,4 +1,8 @@
-import Image from "next/image";
+with open("src/components/brand/logo.tsx", "r") as f:
+    content = f.read()
+
+# Replace with Next Image
+new_logo_component = """import Image from "next/image";
 
 export function Logo({ compact = false, inverted = false }: { compact?: boolean; inverted?: boolean }) {
   return (
@@ -8,9 +12,13 @@ export function Logo({ compact = false, inverted = false }: { compact?: boolean;
         alt="ALC Advanced Learning Centre Logo" 
         width={compact ? 40 : 160} 
         height={compact ? 40 : 160} 
-        className={`object-contain ${compact ? "size-10" : inverted ? "size-24 bg-white p-2 rounded-xl" : "size-12 sm:size-14"} transition-transform`} 
+        className={compact ? "size-10 object-contain" : "w-28 sm:w-36 h-auto object-contain"} 
         priority
       />
     </span>
   );
 }
+"""
+
+with open("src/components/brand/logo.tsx", "w") as f:
+    f.write(new_logo_component)

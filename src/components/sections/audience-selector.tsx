@@ -31,16 +31,16 @@ export function AudienceSelector() {
               <TabsContent key={a.id} value={a.id} className="mt-6 rounded-[10px] border border-border bg-brand-slate-light p-6 sm:p-8">
                 <div className="grid gap-6 lg:grid-cols-[1.2fr_1fr] lg:items-center">
                   <div>
-                    <h3 className="font-heading text-2xl font-bold text-brand-navy">{a.title}</h3>
+                    <h3 className="font-heading text-2xl font-bold text-brand-dark">{a.title}</h3>
                     <p className="mt-2 max-w-xl leading-7 text-slate-600">{a.text}</p>
-                    <Link href="#contact" className="mt-4 inline-flex h-11 items-center rounded-lg bg-brand-navy px-5 text-sm font-bold text-white transition hover:bg-brand-navy-light">
+                    <Link href="#contact" className="mt-4 inline-flex h-11 items-center rounded-lg bg-brand-dark px-5 text-sm font-bold text-white transition hover:bg-brand-medium">
                       Tester mon niveau gratuitement
                     </Link>
                   </div>
                   <ul className="space-y-2.5">
                     {a.bullets.map((b) => (
-                      <li key={b} className="flex items-center gap-2.5 rounded-lg border border-border bg-white px-4 py-3 text-sm font-medium text-brand-navy">
-                        <FaCheck aria-hidden className="text-brand-gold" style={{ color: "#B07C1A" }} /> {b}
+                      <li key={b} className="flex items-center gap-2.5 rounded-lg border border-border bg-white px-4 py-3 text-sm font-medium text-brand-dark">
+                        <FaCheck aria-hidden className="text-brand-green" style={{ color: "#2E8540" }} /> {b}
                       </li>
                     ))}
                   </ul>

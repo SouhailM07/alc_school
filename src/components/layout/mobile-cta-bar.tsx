@@ -28,13 +28,13 @@ export function MobileCtaBar() {
         aria-label="Actions rapides"
         className="grid grid-cols-3 gap-px border-t border-border bg-white pb-[env(safe-area-inset-bottom)]"
       >
-        <a href={contact.phoneMobileHref} className="flex min-h-12 flex-col items-center justify-center gap-0.5 py-2 text-[11px] font-semibold text-brand-navy">
+        <a href={contact.phoneMobileHref} className="flex min-h-12 flex-col items-center justify-center gap-0.5 py-2 text-[11px] font-semibold text-brand-dark">
           <FaPhone aria-hidden size={16} /> Appeler
         </a>
-        <a href={contact.whatsappHref} target="_blank" rel="noopener" className="flex min-h-12 flex-col items-center justify-center gap-0.5 py-2 text-[11px] font-semibold text-brand-navy">
+        <a href={contact.whatsappHref} target="_blank" rel="noopener" className="flex min-h-12 flex-col items-center justify-center gap-0.5 py-2 text-[11px] font-semibold text-brand-dark">
           <FaWhatsapp aria-hidden size={18} /> WhatsApp
         </a>
-        <Link href="#contact" className="flex min-h-12 flex-col items-center justify-center bg-brand-gold py-2 text-[11px] font-bold text-brand-navy">
+        <Link href="#contact" className="flex min-h-12 flex-col items-center justify-center bg-brand-medium py-2 text-[11px] font-bold text-white">
           S&apos;inscrire
         </Link>
       </nav>

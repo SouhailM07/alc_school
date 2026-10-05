@@ -27,11 +27,11 @@ export function ContactForm() {
         <span aria-hidden className="mx-auto grid size-12 place-items-center rounded-full bg-green-600 text-white">
           <FaCheck />
         </span>
-        <h3 className="mt-4 font-heading text-xl font-bold text-brand-navy">Demande envoyée</h3>
+        <h3 className="mt-4 font-heading text-xl font-bold text-brand-dark">Demande envoyée</h3>
         <p className="mt-2 text-sm leading-6 text-slate-700">{contactSection.successMessage}</p>
         <p className="mt-3 text-sm text-slate-600">
           Besoin d&apos;une réponse immédiate ?{" "}
-          <a href="tel:+213550590288" className="font-bold text-brand-navy underline decoration-brand-gold decoration-2 underline-offset-4">
+          <a href="tel:+213550590288" className="font-bold text-brand-dark underline decoration-brand-green decoration-2 underline-offset-4">
             Appelez-nous
           </a>
         </p>
@@ -66,7 +66,7 @@ export function ContactForm() {
         return action(fd);
       }}
       noValidate
-      className="rounded-[10px] border border-border bg-white p-6 shadow-[0_2px_16px_rgba(10,37,69,0.06)] sm:p-8"
+      className="flex h-full flex-col rounded-[10px] border border-border bg-white p-6 shadow-[0_2px_16px_rgba(10,37,69,0.06)] sm:p-8"
       aria-describedby={state.message && !state.ok ? "form-error" : undefined}
     >
       {/* honeypot */}
@@ -79,7 +79,7 @@ export function ContactForm() {
         </div>
         <div className="grid gap-1.5">
           <Label htmlFor="phone">Téléphone *</Label>
-          <Input id="phone" name="phone" inputMode="tel" autoComplete="tel" placeholder="0550 59 02 88" defaultValue={state.values?.phone} aria-invalid={!!errors.phone} aria-describedby={errors.phone ? "phone-error" : undefined} />
+          <Input id="phone" name="phone" inputMode="tel" autoComplete="tel" placeholder="0779 32 71 27" defaultValue={state.values?.phone} aria-invalid={!!errors.phone} aria-describedby={errors.phone ? "phone-error" : undefined} />
           {errors.phone && <p id="phone-error" role="alert" className="text-xs font-medium text-red-700">{errors.phone}</p>}
         </div>
       </div>
@@ -107,7 +107,7 @@ export function ContactForm() {
           {state.message}
         </p>
       )}
-      <Button type="submit" disabled={pending} size="lg" className="mt-6 h-12 w-full bg-brand-gold text-base font-bold text-brand-navy hover:bg-brand-gold-hover">
+      <Button type="submit" disabled={pending} size="lg" className="mt-auto h-12 w-full bg-brand-medium text-base font-bold text-white hover:bg-brand-dark">
         {pending ? (
           <>
             <FaSpinner aria-hidden className="animate-spin" /> Envoi en cours…

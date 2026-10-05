@@ -18,18 +18,18 @@ export function Formations() {
           {programs.map((p, i) => (
             <Reveal key={p.id} delay={i * 0.08}>
               <article className="flex h-full flex-col rounded-[10px] border border-border bg-white p-6 shadow-[0_1px_4px_rgba(10,37,69,0.05)] transition hover:-translate-y-1 hover:shadow-[0_8px_24px_rgba(10,37,69,0.10)]">
-                <p className="text-xs font-bold tracking-widest text-brand-gold uppercase" style={{ color: "#B07C1A" }}>{p.audience}</p>
-                <h3 className="mt-2 font-heading text-xl font-bold text-brand-navy">{p.title}</h3>
+                <p className="text-xs font-bold tracking-widest text-brand-green uppercase" style={{ color: "#2E8540" }}>{p.audience}</p>
+                <h3 className="mt-2 font-heading text-xl font-bold text-brand-dark">{p.title}</h3>
                 <p className="mt-2 text-sm leading-6 text-slate-600">{p.description}</p>
                 <ul className="mt-4 space-y-1.5 text-sm text-slate-700">
                   {p.points.map((pt) => (
                     <li key={pt} className="flex items-start gap-2">
-                      <FaCheck aria-hidden className="mt-1 shrink-0 text-xs text-brand-navy" /> {pt}
+                      <FaCheck aria-hidden className="mt-1 shrink-0 text-xs text-brand-dark" /> {pt}
                     </li>
                   ))}
                 </ul>
                 <p className="mt-3 text-xs font-medium text-slate-500">{p.duration}</p>
-                <Link href="#contact" className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-brand-navy hover:gap-2.5 hover:underline hover:decoration-brand-gold hover:underline-offset-4">
+                <Link href="#contact" className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-brand-dark hover:gap-2.5 hover:underline hover:decoration-brand-green hover:underline-offset-4">
                   Demander ce programme <FaArrowRight aria-hidden className="text-xs" />
                 </Link>
               </article>

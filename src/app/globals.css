@@ -13,26 +13,29 @@
   --font-arabic: var(--font-ibm-plex-arabic);
 
   /* Brand Colors */
-  --color-brand-navy: #0A2545;
-  --color-brand-navy-light: #16365D;
-  --color-brand-gold: #F4B942;
-  --color-brand-gold-hover: #E3A62F;
+  --color-brand-dark: #11325B;
+  --color-brand-medium: #1D70B8;
+  --color-brand-green: #2E8540;
+  --color-brand-text: #1E293B;
   --color-brand-slate: #64748B;
   --color-brand-slate-light: #F8FAFC;
 
   /* Shadcn Semantic Mapping */
-  --color-primary: var(--color-brand-gold);
-  --color-primary-foreground: var(--color-brand-navy);
-  --color-secondary: var(--color-brand-navy-light);
+  --color-primary: var(--color-brand-medium);
+  --color-primary-foreground: #FFFFFF;
+  --color-secondary: var(--color-brand-dark);
   --color-secondary-foreground: #FFFFFF;
   --color-muted: var(--color-brand-slate-light);
   --color-muted-foreground: var(--color-brand-slate);
   --color-accent: var(--color-brand-slate-light);
-  --color-accent-foreground: var(--color-brand-navy);
+  --color-accent-foreground: var(--color-brand-dark);
+  
+  --color-popover: #FFFFFF;
+  --color-popover-foreground: var(--color-brand-text);
   
   --color-border: #E2E8F0;
   --color-input: #E2E8F0;
-  --color-ring: var(--color-brand-gold);
+  --color-ring: var(--color-brand-medium);
   
   --radius-sm: 4px;
   --radius-md: 6px;
@@ -42,7 +45,7 @@
 
 :root {
   --background: #FFFFFF;
-  --foreground: var(--color-brand-navy);
+  --foreground: var(--color-brand-text);
   --radius: 6px;
 }
 
@@ -65,14 +68,14 @@
   }
 
   :focus-visible {
-    outline: 2px solid #F4B942;
+    outline: 2px solid var(--color-brand-medium);
     outline-offset: 2px;
     border-radius: 4px;
   }
 
   ::selection {
-    background: #F4B942;
-    color: #0A2545;
+    background: var(--color-brand-green);
+    color: #FFFFFF;
   }
 
   button:not(:disabled), [role="button"]:not(:disabled) {

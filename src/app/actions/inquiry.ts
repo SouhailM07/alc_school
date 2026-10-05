@@ -24,7 +24,7 @@ async function deliverInquiry(data: { name: string; phone: string; course: strin
       return;
     } catch (err) {
       console.error("[inquiry] webhook delivery failed:", err);
-      throw new Error("La transmission a échoué. Appelez-nous au 0550 59 02 88.");
+      throw new Error("La transmission a échoué. Appelez-nous au 0779 32 71 27.");
     }
   }
   const apiKey = process.env.RESEND_API_KEY;
@@ -45,7 +45,7 @@ async function deliverInquiry(data: { name: string; phone: string; course: strin
       return;
     } catch (err) {
       console.error("[inquiry] resend delivery failed:", err);
-      throw new Error("La transmission a échoué. Appelez-nous au 0550 59 02 88.");
+      throw new Error("La transmission a échoué. Appelez-nous au 0779 32 71 27.");
     }
   }
   console.log("[inquiry] (no provider configured)", data);
@@ -78,6 +78,6 @@ export async function submitInquiry(_prev: InquiryState, formData: FormData): Pr
     await deliverInquiry({ name: parsed.data.name, phone: parsed.data.phone, course: parsed.data.course, message: parsed.data.message });
     return { ok: true, message: "ok" };
   } catch (err) {
-    return { ok: false, message: err instanceof Error ? err.message : "Une erreur est survenue. Appelez-nous au 0550 59 02 88." };
+    return { ok: false, message: err instanceof Error ? err.message : "Une erreur est survenue. Appelez-nous au 0779 32 71 27." };
   }
 }

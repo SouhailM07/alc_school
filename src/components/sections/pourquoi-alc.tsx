@@ -18,11 +18,11 @@ export function PourquoiAlc() {
             {whyAlc.points.map((pt, i) => (
               <Reveal key={pt.title} delay={i * 0.08}>
                 <li className="flex gap-4 border-t border-border py-5 last:border-b">
-                  <span aria-hidden className="font-heading text-sm font-bold text-brand-gold" style={{ color: "#B07C1A" }}>
+                  <span aria-hidden className="font-heading text-sm font-bold text-brand-green" style={{ color: "#2E8540" }}>
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <h3 className="font-heading text-lg font-bold text-brand-navy">{pt.title}</h3>
+                    <h3 className="font-heading text-lg font-bold text-brand-dark">{pt.title}</h3>
                     <p className="mt-1 text-sm leading-6 text-slate-600">{pt.text}</p>
                   </div>
                 </li>

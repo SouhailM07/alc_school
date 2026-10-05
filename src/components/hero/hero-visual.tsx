@@ -52,7 +52,7 @@ export function HeroVisual() {
       {/* Decorative vocabulary chips over the poster */}
       <div className={cn("absolute inset-x-0 bottom-3 flex justify-center gap-2 transition-opacity duration-700", ready && "opacity-0")}>
         {["HELLO", "BONJOUR", "مرحبا"].map((w) => (
-          <span key={w} className="rounded-md bg-white/95 px-2.5 py-1 font-heading text-xs font-bold text-brand-navy shadow-sm">
+          <span key={w} className="rounded-md bg-white/95 px-2.5 py-1 font-heading text-xs font-bold text-brand-dark shadow-sm">
             {w}
           </span>
         ))}
